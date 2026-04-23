@@ -1,23 +1,23 @@
 <p align="center">
-  <h1>🧠 Sharp Think</h1>
+  <h1>🧠 明思</h1>
   <p><strong>结构化思考优化框架 — 让 AI 又快又好地思考</strong></p>
 </p>
 
 <p align="center">
-  <a href="https://github.com/qingjian0/sharp-think"><img src="https://img.shields.io/badge/GitHub-sharp--think-black?logo=github" alt="GitHub"></a>
+  <a href="https://github.com/qingjian0/mingsi-skills"><img src="https://img.shields.io/badge/GitHub-sharp--think-black?logo=github" alt="GitHub"></a>
   <img src="https://img.shields.io/badge/Trae-Skill-2496ED?logo=visualstudiocode" alt="Trae Skill">
-  <a href="https://github.com/qingjian0/sharp-think/stargazers"><img src="https://img.shields.io/github/stars/qingjian0/sharp-think?style=social" alt="Stars"></a>
+  <a href="https://github.com/qingjian0/mingsi-skills/stargazers"><img src="https://img.shields.io/github/stars/qingjian0/mingsi-skills?style=social" alt="Stars"></a>
   <img src="https://img.shields.io/badge/License-MIT-green" alt="MIT License">
 </p>
 
 ---
 
 > [!NOTE]
-> **Sharp Think** 是一个为 [Trae](https://trae.ai/) 设计的 Skill，通过注入结构化思考框架到 AI 的推理过程中，让简单问题秒答、复杂问题深度分析、永远不跑偏。
+> **明思** 是一个为 [Trae](https://trae.ai/) 设计的 Skill，通过注入结构化思考框架到 AI 的推理过程中，让简单问题秒答、复杂问题深度分析、永远不跑偏。
 
 ## ✨ Features
 
-| 痛点 | Sharp Think 的解法 |
+| 痛点 | 明思 的解法 |
 |------|-------------------|
 | 🎯 **方向跑偏** | 强制「一句话复述」+ 歧义检测，理解错就追问 |
 | 🐢 **过度思考** | L1/L2/L3 复杂度分级，简单问题直接回答不展开 |
@@ -82,10 +82,10 @@ cd /path/to/your/project
 mkdir -p .trae/skills
 
 # 克隆仓库到 skills 目录
-git clone https://github.com/qingjian0/sharp-think.git .trae/skills/sharp-think
+git clone https://github.com/qingjian0/mingsi-skills.git .trae/skills/mingsi-skills
 
 # 清理不需要的文件（可选）
-rm -rf .trae/skills/sharp-think/.git
+rm -rf .trae/skills/mingsi-skills/.git
 ```
 
 安装后的目录结构：
@@ -94,7 +94,7 @@ rm -rf .trae/skills/sharp-think/.git
 your-project/
 └── .trae/
     └── skills/
-        └── sharp-think/
+        └── mingsi-skills/
             ├── SKILL.md              # 核心思考框架（Skill 入口）
             └── references/           # 参考卡片库（按需引用）
                 ├── cognitive-biases.md
@@ -108,31 +108,31 @@ your-project/
 如果你在让 Trae、Claude Code、Cursor Agent 或其他终端型 AI 助手代你安装，可以直接粘贴下面这段：
 
 ```
-请帮我安装 sharp-think：
+请帮我安装 mingsi-skills：
 
 1. 如果当前目录还没有这个仓库，执行：
-   git clone https://github.com/qingjian0/sharp-think.git
+   git clone https://github.com/qingjian0/mingsi-skills.git
 
 2. 进入仓库目录：
-   cd sharp-think
+   cd mingsi-skills
 
-3. 将 sharp-think 的内容复制到当前项目的 .trae/skills/sharp-think/ 目录：
-   mkdir -p .trae/skills/sharp-think
-   cp -r SKILL.md references .trae/skills/sharp-think/
+3. 将 mingsi-skills 的内容复制到当前项目的 .trae/skills/mingsi-skills/ 目录：
+   mkdir -p .trae/skills/mingsi-skills
+   cp -r SKILL.md references .trae/skills/mingsi-skills/
 
 4. 安装完成后请检查以下文件是否存在且可读：
-   .trae/skills/sharp-think/SKILL.md
-   .trae/skills/sharp-think/references/cognitive-biases.md
-   .trae/skills/sharp-think/references/decision-frameworks.md
-   .trae/skills/sharp-think/references/quality-checklist.md
-   .trae/skills/sharp-think/references/complexity-scaling.md
+   .trae/skills/mingsi-skills/SKILL.md
+   .trae/skills/mingsi-skills/references/cognitive-biases.md
+   .trae/skills/mingsi-skills/references/decision-frameworks.md
+   .trae/skills/mingsi-skills/references/quality-checklist.md
+   .trae/skills/mingsi-skills/references/complexity-scaling.md
 
 5. 告诉我安装是否成功。
 ```
 
 ### 方式三：直接下载
 
-下载 [最新 Release](https://github.com/qingjian0/sharp-think/releases) 并解压到 `.trae/skills/sharp-think/`。
+下载 [最新 Release](https://github.com/qingjian0/mingsi-skills/releases) 并解压到 `.trae/skills/mingsi-skills/`。
 
 ### 其他平台
 
@@ -148,7 +148,7 @@ your-project/
 
 ### 自动触发
 
-安装后，每次会话中 AI 会根据你的提问自动判断是否加载 Sharp Think。触发关键词：
+安装后，每次会话中 AI 会根据你的提问自动判断是否加载 明思。触发关键词：
 
 | 中文 | English |
 |------|---------|
@@ -164,9 +164,9 @@ your-project/
 仓库提供 `commands/` 目录下的手动命令入口。在支持 Markdown slash commands 的助手里，可直接调用：
 
 ```
-/sharp-think           🧠 启动结构化思考框架
-/sharp-think-l1        ⚡ 强制 L1 直接回答模式
-/sharp-think-l3        🔬 强制 L3 深度分析模式
+/mingsi-skills           🧠 启动结构化思考框架
+/mingsi-skills-l1        ⚡ 强制 L1 直接回答模式
+/mingsi-skills-l3        🔬 强制 L3 深度分析模式
 ```
 
 ### 使用示例
@@ -203,15 +203,15 @@ your-project/
 ## 📁 项目结构
 
 ```
-sharp-think/
+mingsi-skills/
 ├── SKILL.md                          # 核心思考框架（Skill 入口）
 ├── README.md                         # 本文件
 ├── LICENSE                           # MIT 许可证
 ├── .gitignore                        # Git 忽略规则
 ├── commands/                         # 手动 slash commands 入口
-│   ├── sharp-think.md                #   🧠 启动结构化思考
-│   ├── sharp-think-l1.md             #   ⚡ 强制 L1 模式
-│   └── sharp-think-l3.md             #   🔬 强制 L3 模式
+│   ├── mingsi-skills.md                #   🧠 启动结构化思考
+│   ├── mingsi-skills-l1.md             #   ⚡ 强制 L1 模式
+│   └── mingsi-skills-l3.md             #   🔬 强制 L3 模式
 └── references/                       # 参考卡片库（按需引用）
     ├── cognitive-biases.md           # 12 种认知偏差检测清单
     ├── decision-frameworks.md        # 7 种决策框架速查
@@ -232,7 +232,7 @@ sharp-think/
 
 | 问题 | 解决方案 |
 |------|---------|
-| Skill 未自动触发 | 检查 `SKILL.md` 是否在 `.trae/skills/sharp-think/` 内，front matter 是否完整 |
+| Skill 未自动触发 | 检查 `SKILL.md` 是否在 `.trae/skills/mingsi-skills/` 内，front matter 是否完整 |
 | AI 仍然过度思考简单问题 | 确认 SKILL.md 中的复杂度分级表未被修改 |
 | 参考卡片未被引用 | 确保 `references/` 文件夹与 `SKILL.md` 在同一目录 |
 | 输出格式不一致 | 检查 SKILL.md 中的输出格式规范章节是否完整 |
@@ -248,7 +248,7 @@ sharp-think/
 
 欢迎贡献！你可以：
 
-1. **报告 Bug** — 提交 [Issue](https://github.com/qingjian0/sharp-think/issues) 描述问题
+1. **报告 Bug** — 提交 [Issue](https://github.com/qingjian0/mingsi-skills/issues) 描述问题
 2. **建议改进** — 分享新参考卡片或框架优化想法
 3. **提交 PR** — Fork → 修改 → Pull Request
 
